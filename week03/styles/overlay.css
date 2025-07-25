@@ -1,3 +1,10 @@
+:root {
+	--font-family: Roboto, Arial, sans-serif;
+	--border-color: #000;
+	--footer-color: navy;
+}
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,7 +13,7 @@
 main {
 	max-width: 800px;
 	margin: 2rem auto;
-	font-family: Roboto, Arial, sans-serif;
+	font-family: var(--font-family)
 }
 
 h1 {
@@ -30,7 +37,7 @@ h1 {
 	bottom: 25px;
     left: 15px;
 	background: radial-gradient(#eee, #323A06);
-	border: 1px solid #000;
+	border: 1px solid var(--border-color);
 	padding: 0.65rem;
 	box-shadow: 0 0 30px #111;
 	opacity: 0.9;
@@ -46,9 +53,9 @@ footer {
 	position: fixed;
 	bottom: 0;
 	margin: 1rem;
-	border-top: 1px solid #000;
+	border-top: 1px solid var(--border-color);
 	padding: 0.5rem;
-	color: navy;
+	color: var(--footer-color);
 	font-weight: 700;
 	font-style: italic;
 }
